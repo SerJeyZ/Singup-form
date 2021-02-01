@@ -185,6 +185,9 @@ export default {
     padding: 40px 30px;
     border-radius: 24px;
     background-color: #ffffff;
+    @media(max-width: 450px) {
+      padding: 30px 15px;
+    }
   }
   .title {
     font-weight: bold;
@@ -198,6 +201,9 @@ export default {
     font-size: 16px;
     line-height: 22px;
     color: #2C2738;
+    @media(max-width: 450px) {
+      margin-bottom: 35px;
+    }
   }
   .link {
     display: inline-block;
@@ -272,6 +278,9 @@ export default {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      @media(max-width: 450px) {
+        font-size: 14px;
+      }
     }
     span::before {
       content: "";

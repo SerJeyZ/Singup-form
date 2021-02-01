@@ -108,19 +108,19 @@ export default {
     cursor: pointer;
     z-index: 1;
   }
-  .select-control:focus::-webkit-input-placeholder {
+  .form-control.select-control:focus::-webkit-input-placeholder {
     color: #2C2738
   }
 
-  .select-control:focus::-moz-placeholder {
+  .form-control.select-control:focus::-moz-placeholder {
     color: #2C2738
   }
 
-  .select-control:focus:-moz-placeholder {
+  .form-control.select-control:focus:-moz-placeholder {
     color: #2C2738
   }
 
-  .select-control:focus:-ms-input-placeholder {
+  .form-control.select-control:focus:-ms-input-placeholder {
     color: #2C2738
   }
   .select__options {
@@ -137,6 +137,10 @@ export default {
     border-radius: 6px;
     overflow-y: auto;
     z-index: 2;
+    @media(max-width: 450px) {
+      top: 102%;
+      padding: 0;
+    }
   }
   .options-list {
     width: 100%; 
